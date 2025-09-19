@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindMate AI Monthly Digest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Color Palette Variables */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #f1f8e9;
+    --accent-color: #1b5e20;
+    --text-color: #333333;
+    --light-text-color: #777777;
+    --card-bg-color: #f9fbe7;
+}
+
+/* General Body and Container Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, var(--secondary-color) 0%, #ffffff 100%);
+    color: var(--text-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.newsletter-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+/* Header Styles */
+.newsletter-header {
+    text-align: center;
+    border-bottom: 2px solid var(--card-bg-color);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.newsletter-header .logo h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0;
+    letter-spacing: -1px;
+}
+
+.newsletter-header h2 {
+    font-size: 1.25rem;
+    color: var(--light-text-color);
+    margin-top: 0.5rem;
+    font-weight: 400;
+}
+
+/* Main Content and Section Styles */
+.newsletter-content {
+    line-height: 1.7;
+}
+
+.newsletter-content h3 {
+    color: var(--accent-color);
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.newsletter-content h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    width: 6px;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+}
+
+.newsletter-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.newsletter-content li {
+    background-color: var(--card-bg-color);
+    padding: 1.25rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.newsletter-content li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tip-card {
+    background: linear-gradient(45deg, var(--secondary-color), var(--card-bg-color));
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tip-card h4 {
+    color: var(--accent-color);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 0.75rem;
+}
+
+/* Multimedia Styles */
+.section-media {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.featured-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.featured-image:hover {
+    transform: scale(1.02);
+}
+
+.image-caption {
+    font-style: italic;
+    color: var(--light-text-color);
+    margin-top: 0.75rem;
+}
+
+/* Footer Styles */
+.newsletter-footer {
+    text-align: center;
+    border-top: 2px solid var(--card-bg-color);
+    padding-top: 1.5rem;
+    margin-top: 2.5rem;
+    font-size: 0.9rem;
+    color: var(--light-text-color);
+}
+
+.newsletter-footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin: 0 0.75rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.newsletter-footer a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.footer-links {
+    margin-bottom: 0.5rem;
+}
+
+.contact-info a {
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .newsletter-container {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    .newsletter-header .logo h1 {
+        font-size: 2.25rem;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="newsletter-container">
+        <!-- Header Section -->
+        <header class="newsletter-header">
+            <div class="logo">
+                <h1>MindMate AI</h1>
+            </div>
+            <h2>Monthly Digest: September 2025</h2>
+        </header>
+
+        <!-- Main Content Section -->
+        <main class="newsletter-content">
+            <section class="section-updates">
+                <h3>Product Updates & New Features</h3>
+                <ul>
+                    <li>**New Guided Meditations:** We've added a new series of guided meditations to our library, including sessions for stress relief, focus, and restful sleep.</li>
+                    <li>**Enhanced Mood Tracker:** We've updated our mood tracker with new insights and visualizations to give you a clearer picture of your emotional patterns over time.</li>
+                    <li>**Personalized Self-Care Routines:** Our new feature creates custom self-care routines based on your needs and goals. Just tell us what you're looking for, and we'll build a plan just for you.</li>
+                </ul>
+            </section>
+
+            <section class="section-tips">
+                <h3>Mental Health Tip of the Month</h3>
+                <div class="tip-card">
+                    <h4>The Power of a 5-Minute Break</h4>
+                    <p>Feeling overwhelmed? Take just five minutes to step away from your screen. Try a simple breathing exercise, stretch, or just close your eyes and listen to your surroundings. This small act can reset your mind and boost your focus for the rest of the day.</p>
+                </div>
+            </section>
+
+            <!-- Multimedia Section -->
+            <section class="section-media">
+                <h3>Featured Meditation</h3>
+                <img src="picture 6.png">
+                <p class="image-caption">
+                    Find your calm with our latest guided meditation on gratitude.
+                </p>
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="newsletter-footer">
+            <div class="footer-links">
+                <p>Stay Connected:</p>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <div class="contact-info">
+                <p>Questions? Contact us at: mindmateAI@gmail.com</a></p>
+            </div>
+            <p>&copy; 2025 MindMate AI. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>

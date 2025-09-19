@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindMate AI - Empowering Mental Wellness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="main-header">
+        <div class="logo">
+            <h1>MindMate AI</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><button class="signup-button" id="signupBtn">Sign Up</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sign Up Modal -->
+    <div class="modal" id="signupModal">
+        <div class="modal-content">
+            <span class="close-button" id="closeModal">&times;</span>
+            <h2>Create Your Account</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <button type="submit" class="form-submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Premium Sign Up Modal -->
+    <div class="modal" id="premiumModal">
+        <div class="modal-content">
+            <span class="close-button" id="closePremiumModal">&times;</span>
+            <h2>Upgrade to Premium</h2>
+            <form id="premiumForm">
+                <div class="form-group">
+                    <label for="premium-name">Full Name</label>
+                    <input type="text" id="premium-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="premium-email">Email Address</label>
+                    <input type="email" id="premium-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="payment">Payment Method</label>
+                    <select id="payment" name="payment">
+                        <option value="credit">Credit Card</option>
+                        <option value="debit">Debit Card</option>
+                    </select>
+                </div>
+                <button type="submit" class="form-submit">Complete Upgrade</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div class="notification" id="notification">
+        Thank you for your Premium request! We'll get back to you soon.
+    </div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Empowering Mental Wellness with AI</h1>
+            <p>Your personal AI companion for daily mood tracking, CBT-based support, and self-care routines. Take the first step towards a healthier mind.</p>
+            <a href="#features" class="cta-button">Explore Features</a>
+        </div>
+        <div class="hero-image">
+            <img src="picture-1.jpg" alt="MindMate AI App Interface">
+        </div>
+    </section>
+    
+    <section id="features" class="features-section">
+        <h2>Key Features</h2>
+            <div class="feature-grid">
+            <div class="feature-item">
+                 <a href="product.html#chatbot-section">
+                <img src="picture-2.png" alt="AI Chatbot">
+                <h3>AI Chatbot</h3></a>
+                <p>An AI chatbot trained in Cognitive Behavioral Therapy (CBT) to help you navigate your thoughts.</p>
+                </div>
+
+            <div class="feature-item">
+                <a href="product.html#mood-tracker-section">
+                <img src="picture 3.png" alt="Mood Tracking">
+                <h3>Mood Tracking</h3></a>
+                <p>Personalized daily mood tracking and mental health insights to help you understand your patterns.</p>
+            </div>
+
+            <div class="feature-item">
+                <a href="service.html#meditations-section">
+                <img src="picture 4.png" alt="Meditations">
+                <h3>Meditations</h3></a>
+                <p>Guided meditations and breathing exercises to reduce stress and promote mindfulness.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <h2>Choose Your Plan</h2>
+        <p>Select the plan that works best for your mental wellness journey. Start with our free features or unlock the full potential with Premium.</p>
+        
+        <div class="pricing-container">
+            <div class="pricing-plan freemium">
+                <h3 class="plan-name">Freemium</h3>
+                <div class="plan-price">Free</div>
+                <ul class="plan-features">
+                    <li>Mood Tracking</li>
+                    <li>Basic Guided Meditations</li>
+                    <li>Simple Self-Care Routines</li>
+                    <li>Community Support</li>
+                </ul>
+                <button class="plan-button" id="freemiumBtn">You are currently in Freemium</button>
+            </div>
+            
+            <div class="pricing-plan premium">
+                <h3 class="plan-name">Premium</h3>
+                <div class="plan-price">R100<span class="price-period">/month</span></div>
+                <ul class="plan-features">
+                    <li>Everything in Freemium</li>
+                    <li>Advanced Personalization</li>
+                    <li>Full Meditation Library</li>
+                    <li>Priority Support</li>
+                    <li>Advanced Analytics</li>
+                    <li>Customized Self-Care Plans</li>
+                </ul>
+                <button class="plan-button" id="premiumBtn">Get Premium</button>
+            </div>
+        </div>
+    
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; MindMate AI. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
