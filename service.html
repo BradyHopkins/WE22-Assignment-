@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindMate AI - Our Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Header and Navigation -->
+    <header class="main-header">
+        <div class="logo">
+            <h1>MindMate AI</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- service section-->
+    <section class="service-intro">
+        <h2>Personalized Support for Your Well-being</h2>
+        <p>Our services are designed to provide you with the guidance and tools you need to build lasting healthy habits.</p>
+    </section>
+
+    <section class="service-section meditations-section" id="meditations-section">
+        <div class="service-card">
+            <h3>Daily Meditations</h3>
+            <p>Find peace and clarity with our guided meditation sessions. This could help with stress relief, better sleep, and focus.</p>
+            <div class="meditation-player">
+                <audio controls>
+                    <source src="15 Minute Meditation.mp3" type="audio/mpeg">
+                     Your browser does not support the audio element.
+                </audio>
+                <p>Listen to a sample now.</p>
+            </div>
+        </div>
+    </section>
+
+  
+    <section class="service-section ai-coach-section">
+        <div class="service-card">
+            <h3>Your Personal AI Coach</h3>
+            <p>Our AI coach acts as a personal assistant, offering step-by-step guidance on how to get the most out of MindMate AI's features.</p>
+            <button id="coach-guide-button" class="cta-button">Get Started with Your AI Coach</button>
+            <div id="coach-response" class="coach-response"></div>
+        </div>
+    </section>
+
+    
+    <section class="service-section self-care-section">
+        <div class="service-card">
+            <h3>Personalized Self-Care Routines</h3>
+            <p>Build custom self-care plans tailored to your needs. Set goals for exercise, journaling, and relaxation to create a balanced routine.</p>
+            <ul id="routines-list">
+                <li><input type="checkbox"> Journaling for 15 minutes</li>
+                <li><input type="checkbox"> 10-minute mindfulness walk</li>
+                <li><input type="checkbox"> Gratitude practice</li>
+            </ul>
+            <button class="cta-button add-routine-button">Add a New Routine</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; MindMate AI. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="service-script.js"></script>
+
+</body>
+</html>
